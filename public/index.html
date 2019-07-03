@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  ​
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <title>Donkey Notes</title>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/assets/js/donkeys.js"></script>
+  ​
+</head>
+
+  <div class="p-3 mb-2 bg-light text-dark" style="border: 9px inset #C70039;">
+    <div class="container">
+      <h1 style="color: #03437c"><strong>Welcome to Donkey Notes</strong></h1>
+      <h5 style="color: #C70039;">A digital way to organize your notes on an ever-expanding pool of democratic nominees for the 2020 Presidental Race.</h5>
+      <p><i>Enter your email address to see your previously saved notes, and hit the "Note Editting Mode" button to edit or add notes. You will get a daily email updating you on your friends' most recent thoughts.</i></p>
+      <img id= "demoDonkey" src="./assets/images/kisspng-clip-art-computer-icons-election-voting-video-democratic-free-other-icons-5baa92c0b45405.2432435615379053447386.png"
+      alt="Democratic Donkey" width="30%">
+    </div>​
+
+<body class="p-3 mb-2" style="background-color: #5091CF">
+  ​
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputusername1">Email Address</label>
+            <input type="email" class="form-control" id="usernameInput" aria-describedby="usernameHelp"
+              placeholder="email@email.com">
+            <small id="usernameHelp" class="form-text text-muted"></small>
+            <div>You are logged in as: <span id="usernameDisplay"></span></div>
+            ​
+          </div>
+          <button type="submit" data-id="usernameButton" class="btn btn-primary" style="background-color: #0853a4">Enter Username</button>
+          <button type="submit" data-id="editModeBtn" class="btn btn-danger" style="background-color: #e02424">Note Editting Mode</button>
+
+        </form>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+    ​
+    <!-- This is where the data will be -->
+    <table class="table" id="candidateTable">
+      <thead>
+        <tr>
+          <th scope="col"><button id="sortingButton" type="submit" data-id="name"
+              class="btn btn-default"><strong>Name</strong></button></th>
+          <th scope="col"><button id="sortingButton" type="submit" data-id="age"
+              class="btn btn-default"><strong>Age</strong></button></th>
+          <th scope="col"><button id="sortingButton" type="submit" data-id="state"
+              class="btn btn-default"><strong>State</strong></button></th>
+          <th scope="col"><button id="sortingButton" type="submit" data-id="party"
+              class="btn btn-default"><strong>Party</strong></button></th>
+          <th scope="col"><button id="sortingButton" type="submit" data-id="notes"
+              class="btn btn-default"><strong>Notes</strong></button></th>
+        </tr>
+      </thead>
+      <tbody id="candidateData">
+      </tbody>
+    </table>
+
+    </span> ​
+  </div>
+</body>
+​
+
+</html>
